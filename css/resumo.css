@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root{
+    --cor-header: #cab781;
+    --cor-de-fundo:#f7eba8;
+    --cor-borda: #464430;
+    --cor-letra-e-fundo-do-menu: #1F1E15;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--cor-de-fundo);
+    
+}
+
+/* Estilização do Header */
+
+#header {
+    background: var(--cor-header);
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.lista-header {
+    display: flex;
+    gap: 30px;
+}
+
+.itens-lista {
+    padding: 15px 20px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    transition: transform .15s ease;
+}
+
+.lista-header a{
+    text-decoration: none;
+    color: var(--cor-letra-e-fundo-do-menu);
+}
+
+.itens-lista:hover{
+    background: var(--cor-borda);
+    color: var(--cor-de-fundo);
+    border-radius: 20px;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.cabecalho-texto{
+    text-decoration: none;
+    color: var(--cor-letra-e-fundo-do-menu);
+}
+
+.lista-header a, .cabecalho-texto {
+    line-height: normal;
+}
+
+.lista-header .itens-lista {
+    align-items: center;
+    display: flex;
+}
+
+.lista-logo {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.lista-logo li {
+    padding: 0 20px;
+}
+
+.imagem-logo-lista{
+    width: 50px;
+    margin-left: 10px;
+}
+/* Fim do Header */
+
+/* Estilização do Container */
+#container{
+    background: var(--cor-de-fundo);
+    border: 1px solid var(--cor-borda);
+    border-radius: 4px;
+    width: 82em;
+    height: 500px;
+    margin: 5px auto;   
+}
+
+#p1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;   
+    background-color: var(--cor-letra-e-fundo-do-menu);
+}
+
+#p1 h1{
+    position: relative;
+    bottom: 225px;
+    left: 10px;
+    text-align: center;
+    font-size: 3em;
+    color: var(--cor-de-fundo);
+}
+
+.conteudo{
+    position: absolute;
+    right: 340px;
+    width: 41em;
+    border: 3px solid var(--cor-borda);
+    border-radius: 2px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+.projetos{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.grid-item{   
+    border: 1px solid var(--cor-de-fundo);
+    transition: transform .3s ease;
+}
+
+.grid-item h2{
+    color: var(--cor-de-fundo);
+    text-align: center;
+}
+
+.grid-item p{
+    color: var(--cor-header);
+    text-align: center;
+}
+
+.grid-item a{
+    text-decoration: none;
+}
+
+.grid-item:hover{
+    background-color: var(--cor-borda);
+    cursor: pointer;
+    transform: scale(1.5,1.5);
+}
+/* Fim do Container */

@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root{
+    --cor-header: #cab781;
+    --cor-de-fundo:#f7eba8;
+    --cor-borda: #464430;
+    --cor-letra-e-fundo-do-menu: #1F1E15;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--cor-de-fundo);
+    
+}
+
+/* Estilização do Header */
+
+#header {
+    background: var(--cor-header);
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.lista-header {
+    display: flex;
+    gap: 30px;
+}
+
+.itens-lista {
+    padding: 15px 20px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    transition: transform .15s ease;
+}
+
+.lista-header a{
+    text-decoration: none;
+    color: var(--cor-letra-e-fundo-do-menu);
+}
+
+.itens-lista:hover{
+    background: var(--cor-borda);
+    color: var(--cor-de-fundo);
+    border-radius: 20px;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.cabecalho-texto{
+    text-decoration: none;
+    color: var(--cor-letra-e-fundo-do-menu);
+}
+
+.lista-header a, .cabecalho-texto {
+    line-height: normal;
+}
+
+.lista-header .itens-lista {
+    align-items: center;
+    display: flex;
+}
+
+.lista-logo {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.lista-logo li {
+    padding: 0 20px;
+}
+
+.imagem-logo-lista{
+    width: 50px;
+    margin-left: 10px;
+}
+/* Fim do Header */
+
+
+/* Estilização do Container */
+
+#container{
+    background: var(--cor-de-fundo);
+    border: 1px solid var(--cor-borda);
+    border-radius: 4px;
+    width: 82em;
+    height: 500px;
+    margin: 5px auto;   
+}
+
+#p1{
+    width: 100%;
+    height: 100%;   
+    background-color: var(--cor-letra-e-fundo-do-menu);
+}
+
+.imagem img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    left: 150px;
+    top: 150px;
+}
+
+.txt h1{
+    color: var(--cor-de-fundo);
+    cursor: default;
+}
+
+.txt{
+    float: right;
+    position: absolute;
+    left: 600px;
+    bottom: 350px;
+    color: var(--cor-header);
+    cursor: default;
+}
+
+.texto{
+    float: right;
+}
+
+.carrosel{
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+    width: 700px;
+    height: 190px;
+    position: absolute;
+    left: 600px;
+    top: 380px;
+    border: 3px solid var(--cor-borda);
+    border-radius: 2px;
+}
+
+.carrosel h2{
+    position: relative;
+    top: 15px;   
+    padding: 5px 0 5px 5px;
+    color: var(--cor-de-fundo);
+    float: left;
+    cursor: default;
+}
+
+.lista-habilidades{
+    float: rigth;
+    margin-right: 20px;
+}
+
+.hab-items{
+    border: 1px solid var(--cor-header);
+    padding: 7px 5px;
+    color: var(--cor-header);
+    float: right;
+    text-decoration: none;
+    list-style-type: none;
+    cursor: default;
+}
+
+.carrosel hr{   
+    width: 100%;
+    border: 2px solid var(--cor-borda)
+}
+
+.unity{
+    position: relative;
+    left: 24px;
+    float: left;
+}
+
+.hab-items:hover{
+    background: var(--cor-borda);
+    color: var(--cor-de-fundo);
+ 
+}
+
+.proj-items{
+    border: 1px solid var(--cor-header);
+    padding: 7px 5px;
+    color: var(--cor-header);
+    float: left;
+    text-decoration: none;
+    list-style-type: none;
+    transition: transform .5s ease;
+}
+
+.proj-items:hover{
+    background: var(--cor-borda);
+    color: var(--cor-de-fundo);
+    transform: scale(1.5);
+}
+
+.lista-projetos{    
+    position: relative;
+    top: 18px;
+    left: 10px;
+}
+
+.contatos{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border: 3px solid var(--cor-borda);
+    border-radius: 2px;
+    width: 400px;
+    position: absolute;
+    top: 380px;
+    left: 100px;
+}
+
+.contatos h2{
+    color: var(--cor-de-fundo);
+    cursor: default;
+}
+
+.contatos .items-contato{
+    text-decoration: none;
+    color: var(--cor-header);
+    font-size: 30px;
+    position: relative;
+    top: 35%;
+    left: 35%;
+    margin-top: 20px;
+}
+
+.items-contato:hover{
+    color: var(--cor-borda);
+}
+
+/* Fim do Container */
