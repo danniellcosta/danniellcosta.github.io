@@ -14,9 +14,9 @@
     box-sizing: border-box;
 }
 
+
 body{
     background: var(--cor-de-fundo);
-    
 }
 
 /* Estilização do Header */
@@ -40,7 +40,6 @@ body{
     list-style-type: none;
     display: flex;
     align-items: center;
-    transition: transform .15s ease;
 }
 
 .lista-header a{
@@ -49,11 +48,12 @@ body{
 }
 
 .itens-lista:hover{
-    background: var(--cor-borda);
-    color: var(--cor-de-fundo);
+    background: #464430;
+    color: #f7eba8;
     border-radius: 20px;
     cursor: pointer;
     transform: scale(1.1);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 .cabecalho-texto{
@@ -93,9 +93,10 @@ body{
     background: var(--cor-de-fundo);
     border: 1px solid var(--cor-borda);
     border-radius: 4px;
-    width: 82em;
+    width: 90%;
+    max-width: 1200px;
     height: 500px;
-    margin: 5px auto;   
+    margin: 20px auto;   
 }
 
 #p1{
@@ -108,7 +109,7 @@ body{
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 0 5px rgba(0, 0, 0, 0.3);
     position: absolute;
     left: 150px;
     top: 150px;
@@ -132,15 +133,15 @@ body{
     float: right;
 }
 
-.carrosel{
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
-    width: 700px;
-    height: 190px;
+.carrosel{    
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 650px;
+    max-height: 700px;
     position: absolute;
     left: 600px;
     top: 380px;
     border: 3px solid var(--cor-borda);
-    border-radius: 2px;
+    border-radius: 8px;
 }
 
 .carrosel h2{
@@ -153,12 +154,22 @@ body{
 }
 
 .lista-habilidades{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 5px;
     float: rigth;
     margin-right: 20px;
+    position: relative;
+    top: 2px;
+    left: 10px;
 }
 
 .hab-items{
+    display: flex;
+    transition: background-color 0.3s ease;
     border: 1px solid var(--cor-header);
+    border-radius: 5px;
     padding: 7px 5px;
     color: var(--cor-header);
     float: right;
@@ -172,12 +183,6 @@ body{
     border: 2px solid var(--cor-borda)
 }
 
-.unity{
-    position: relative;
-    left: 24px;
-    float: left;
-}
-
 .hab-items:hover{
     background: var(--cor-borda);
     color: var(--cor-de-fundo);
@@ -186,6 +191,7 @@ body{
 
 .proj-items{
     border: 1px solid var(--cor-header);
+    border-radius: 5px;
     padding: 7px 5px;
     color: var(--cor-header);
     float: left;
@@ -197,20 +203,24 @@ body{
 .proj-items:hover{
     background: var(--cor-borda);
     color: var(--cor-de-fundo);
-    transform: scale(1.5);
+    transform: scale(1.2);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 .lista-projetos{    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 5px;
     position: relative;
-    top: 18px;
+    top: 2px;
     left: 10px;
 }
 
 .contatos{
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
     padding: 10px;
     border: 3px solid var(--cor-borda);
-    border-radius: 2px;
+    border-radius: 8px;
     width: 400px;
     position: absolute;
     top: 380px;
@@ -220,6 +230,7 @@ body{
 .contatos h2{
     color: var(--cor-de-fundo);
     cursor: default;
+    text-align: center;
 }
 
 .contatos .items-contato{
@@ -230,10 +241,41 @@ body{
     top: 35%;
     left: 35%;
     margin-top: 20px;
+    display: inline-block;
+    margin: 0 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .items-contato:hover{
     color: var(--cor-borda);
+    transform: scale(1.2);
+}
+/* Fim do Container */
+
+/* Responsividade */
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+   
 }
 
-/* Fim do Container */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 600px) {
+  
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+   
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 922px) {
+   
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media screen and (min-width: 1200px){
+    
+}

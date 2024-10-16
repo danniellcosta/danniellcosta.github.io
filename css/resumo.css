@@ -91,9 +91,10 @@ body{
     background: var(--cor-de-fundo);
     border: 1px solid var(--cor-borda);
     border-radius: 4px;
-    width: 82em;
+    width: 100%;
+    max-width: 1200px;
     height: 500px;
-    margin: 5px auto;   
+    margin: 20px auto;   
 }
 
 #p1{
@@ -106,6 +107,7 @@ body{
 }
 
 #p1 h1{
+    cursor: default;
     position: relative;
     bottom: 225px;
     left: 10px;
